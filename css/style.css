@@ -1,5 +1,19 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
 body {
   background: black;
   color: whitesmoke; }
+
+.main-nav {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1em;
+  font-size: 1.7em;
+  text-align: center; }
+  .main-nav li {
+    margin-bottom: 1.2em; }
 
 /*# sourceMappingURL=style.css.map */
