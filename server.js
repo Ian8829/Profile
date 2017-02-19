@@ -6,5 +6,5 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.get('/', (req, res) => res.send('Hello David'));
-app.use(express.static(__dirname));
+app.use(express.static(__dirname + '/public'));
 app.listen(PORT, () => console.log('Server is running at ' + PORT));
