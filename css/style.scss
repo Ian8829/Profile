@@ -6,18 +6,22 @@
 
 body {
   background: black;
-  color: whitesmoke;
 }
 
-
-
-.main-nav {
+.navbar {
   display: flex;
-  flex-direction:column;
-  margin-top: 1em;
-  font-size: 1.7em;
-  text-align: center;
-  li {
-    margin-bottom: 1.2em;
+  .navbar-brand {
+    font-size: 1.5em;
   }
+  .navbar-toggler-icon {
+    font-size: 1.1em;
+  }
+}
+
+.img-fluid {
+  max-width: 70%;
+  border-radius: 30%;
+  margin: 0 auto;
+  margin-top: 4em;
+  text-align: center;
 }

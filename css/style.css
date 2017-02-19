@@ -4,16 +4,20 @@
   box-sizing: border-box; }
 
 body {
-  background: black;
-  color: whitesmoke; }
+  background: black; }
 
-.main-nav {
-  display: flex;
-  flex-direction: column;
-  margin-top: 1em;
-  font-size: 1.7em;
+.navbar {
+  display: flex; }
+  .navbar .navbar-brand {
+    font-size: 1.5em; }
+  .navbar .navbar-toggler-icon {
+    font-size: 1.1em; }
+
+.img-fluid {
+  max-width: 70%;
+  border-radius: 30%;
+  margin: 0 auto;
+  margin-top: 4em;
   text-align: center; }
-  .main-nav li {
-    margin-bottom: 1.2em; }
 
 /*# sourceMappingURL=style.css.map */
