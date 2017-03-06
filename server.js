@@ -26,6 +26,7 @@ app.get('/', (req, res) => res.render('index'));
 app.get('/profile', (req, res) => res.render('profile'));
 app.get('/sites', (req, res) => res.render('sites'));
 app.get('/music', (req, res) => res.render('music'));
+app.get('/login', (req, res) => res.render('login'));
 
 
 app.listen(PORT, () => console.log('Server is running at ' + PORT));
