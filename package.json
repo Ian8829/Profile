@@ -18,6 +18,7 @@
   "homepage": "https://github.com/Ian8829/Profile#readme",
   "dependencies": {
     "express": "^4.14.1",
+    "morgan": "^1.8.1",
     "pug": "^2.0.0-beta11"
   }
 }

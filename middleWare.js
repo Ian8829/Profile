@@ -1,7 +1,3 @@
-/**
- * Created by ian on 2017. 2. 19..
- */
-
 const middleWare = {
     requireAuthentication: (req, res, next) => {
         console.log('Private route hit!');
