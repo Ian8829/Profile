@@ -29,8 +29,9 @@ article .nick {
 
 div#demo {
   margin-top: 4em; }
-  div#demo img {
+  div#demo .slider {
     max-width: 75%;
+    max-height: 45%;
     border-radius: 10%; }
 
 .embed-responsive {
@@ -48,8 +49,9 @@ div#demo {
   .embed-responsive {
     max-width: 70%; }
 
-  div#demo img {
-    max-width: 60%; } }
+  div#demo .slider {
+    max-width: 60%;
+    max-height: 60%; } }
 @media (min-width: 1200px) {
   .img-fluid {
     max-width: 50%; }
@@ -57,7 +59,8 @@ div#demo {
   .embed-responsive {
     max-width: 60%; }
 
-  div#demo img {
-    max-width: 55%; } }
+  div#demo .slider {
+    max-width: 55%;
+    max-height: 60%; } }
 
 /*# sourceMappingURL=style.css.map */
