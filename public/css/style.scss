@@ -4,8 +4,20 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   background: black;
+  min-height: 100%;
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.content {
+  min-height: calc(100vh - 70px);
+  width: 100%;
 }
 // basic
 
@@ -24,7 +36,7 @@ article {
     //border: 1px solid rgba(255, 169, 0, 0.47);
     margin: 4em auto;
     max-width: 37%;
-    background-color: #ffa44e;
+    background-color: #b63200;
     border-radius: 23%;
     .icons {
       margin: 1em 1em;
@@ -58,6 +70,21 @@ div#demo {
 }
 // music
 
+
+footer {
+  nav.bottom {
+    position: absolute;
+    left: 0; right:0; bottom:0;
+    height: 50px;
+    background-color: #474747;
+    padding-top: 13px;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+  }
+}
+// footer
+
 @media (min-width: 568px) {
   article {
     .nick {
@@ -89,7 +116,7 @@ div#demo {
     }
   }
   .jumbotron {
-    max-width: 60%;
+    max-width: 65%;
   }
   .embed-responsive {
     max-width: 80%;
