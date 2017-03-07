@@ -41,8 +41,8 @@ article {
 div#demo {
   margin-top: 4em;
     .slider {
-      width: 420px;
-      height: 420px;
+      width: 340px;
+      height: 355px;
       border-radius: 10%;
     }
 }
@@ -56,14 +56,14 @@ div#demo {
 // music
 
 
-@media (min-width: 768px) {
+@media (min-width: 690px) {
   .embed-responsive {
     max-width: 80%;
   }
   div#demo {
     .slider {
-      width: 520px;
-      height: 520px;
+      width: 450px;
+      height: 470px;
     }
   }
 }
@@ -78,8 +78,8 @@ div#demo {
   }
   div#demo {
     .slider {
-      width: 600px;
-      height: 600px;
+      width: 530px;
+      height: 550px;
     }
   }
 }
@@ -93,8 +93,8 @@ div#demo {
   }
   div#demo {
     .slider {
-      width: 650px;
-      height: 650px;
+      width: 620px;
+      height: 640px;
     }
   }
 }
