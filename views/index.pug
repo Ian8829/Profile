@@ -2,9 +2,11 @@ doctype html
 html(lang='ko')
     head
         include layout
+        link(rel="stylesheet" href="/css/slider.css")
     body
         include navHeader
         article
-            include article
+            include slide
         footer
-            include script
+        include script
+        script(src="/js/slider.js")

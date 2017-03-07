@@ -79,6 +79,7 @@ label {
     width: 10px;
     height: 10px;
     border-radius: 5px;
+    margin: 1em 1em;
 }
 
 #slide1:checked ~ label[for="slide1"],
@@ -86,4 +87,8 @@ label {
 #slide3:checked ~ label[for="slide3"],
 #slide4:checked ~ label[for="slide4"] {
     background: #333;
+}
+
+img {
+    max-width: 80%;
 }

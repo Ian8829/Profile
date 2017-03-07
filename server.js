@@ -6,7 +6,7 @@ const app = express();
 const path = require('path');
 const logger = require('morgan');
 const PORT = process.env.PORT || 3000;
-const expressVue = require('express-vue');
+// const expressVue = require('express-vue');
 // const middleWare = require('./middleWare');
 
 const index = require('./routes/index');
