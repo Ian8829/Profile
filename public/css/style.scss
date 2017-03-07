@@ -55,7 +55,10 @@ div#demo {
 }
 // music
 
-@media (min-width: 350px) {
+@media (min-width: 568px) {
+  body {
+    text-align: center;
+  }
   header {
     a.navbar-brand {
       margin-left: 13px;
