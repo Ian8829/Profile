@@ -1,0 +1,29 @@
+script#img-slider-template(type="text/x-template")
+    div#slider
+    input#slide1(checked="" type="radio" name="slider" selected="false")
+    input#slide2(type="radio" name="slider"  selected="false")
+    input#slide3(type="radio" name="slider"  selected="false")
+    input#slide4(type="radio" name="slider"  selected="false")
+    div#slides
+        div#overflow
+            div.inner
+                article
+                    content(select="img:nth-of-type(1)")
+                article
+                    content(select="img:nth-of-type(2)")
+                article
+                    content(select="img:nth-of-type(3)")
+                article
+                    content(select="img:nth-of-type(4)")
+    label(for="slide1")
+    label(for="slide2")
+    label(for="slide3")
+    label(for="slide4")
+
+div#demo
+    img-slider
+        img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/5689/rock.jpg")
+        img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/5689/rock.jpg")
+        img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/5689/rock.jpg")
+        img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/5689/rock.jpg")
+
