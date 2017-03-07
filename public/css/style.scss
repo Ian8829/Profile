@@ -21,9 +21,12 @@ article {
   .nick {
     color: orange;
     text-align:center;
+    border: 1px solid rgba(255, 169, 0, 0.47);
+    margin: 4em auto;
+    max-width: 37%;
+    border-radius: 23%;
     .icons {
       margin: 1em 1em;
-      margin-top: 2em;
       width: 27px;
       height: 27px;
     }
@@ -32,8 +35,6 @@ article {
     }
     .soundcloud {
       border-radius: 10%;
-    }
-    .youtube {
     }
   }
 }
@@ -59,6 +60,7 @@ div#demo {
 @media (min-width: 568px) {
   article {
     .nick {
+      max-width: 33%;
       .icons {
         width: 30px;
         height: 30px;
@@ -78,6 +80,7 @@ div#demo {
 @media (min-width: 720px) {
   article {
     .nick {
+      max-width: 30%;
       .icons {
         width: 36px;
         height: 36px;
@@ -102,6 +105,7 @@ div#demo {
 @media (min-width: 992px) {
   article {
     .nick {
+      max-width: 23%;
       .icons {
         width: 42px;
         height: 42px;
@@ -128,6 +132,7 @@ div#demo {
 @media (min-width: 1200px) {
   article {
     .nick {
+      max-width: 20%;
       .icons {
         width: 45px;
         height: 45px;

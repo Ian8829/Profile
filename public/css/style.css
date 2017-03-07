@@ -14,10 +14,13 @@ body {
 
 article .nick {
   color: orange;
-  text-align: center; }
+  text-align: center;
+  border: 1px solid rgba(255, 169, 0, 0.47);
+  margin: 4em auto;
+  max-width: 37%;
+  border-radius: 23%; }
   article .nick .icons {
     margin: 1em 1em;
-    margin-top: 2em;
     width: 27px;
     height: 27px; }
   article .nick .naver {
@@ -38,9 +41,11 @@ div#demo {
   max-width: 90%; }
 
 @media (min-width: 568px) {
-  article .nick .icons {
-    width: 30px;
-    height: 30px; }
+  article .nick {
+    max-width: 33%; }
+    article .nick .icons {
+      width: 30px;
+      height: 30px; }
 
   body {
     text-align: center; }
@@ -48,9 +53,11 @@ div#demo {
   header a.navbar-brand {
     margin-left: 13px; } }
 @media (min-width: 720px) {
-  article .nick .icons {
-    width: 36px;
-    height: 36px; }
+  article .nick {
+    max-width: 30%; }
+    article .nick .icons {
+      width: 36px;
+      height: 36px; }
 
   .jumbotron {
     max-width: 60%; }
@@ -62,9 +69,11 @@ div#demo {
     width: 430px;
     height: 445px; } }
 @media (min-width: 992px) {
-  article .nick .icons {
-    width: 42px;
-    height: 42px; }
+  article .nick {
+    max-width: 23%; }
+    article .nick .icons {
+      width: 42px;
+      height: 42px; }
 
   .jumbotron {
     max-width: 55%; }
@@ -79,9 +88,11 @@ div#demo {
     width: 530px;
     height: 550px; } }
 @media (min-width: 1200px) {
-  article .nick .icons {
-    width: 45px;
-    height: 45px; }
+  article .nick {
+    max-width: 20%; }
+    article .nick .icons {
+      width: 45px;
+      height: 45px; }
 
   .jumbotron {
     max-width: 50%; }
