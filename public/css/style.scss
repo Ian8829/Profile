@@ -9,15 +9,12 @@ body {
 }
 // basic
 
-.img-fluid {
-  max-width: 70%;
-  border-radius: 30%;
-  margin: 0 auto;
-  margin-top: 4em;
-  text-align: center;
+header {
+  a.navbar-brand {
+    margin-left: 13px;
+  }
 }
-// index
-
+// navHeader
 
 article {
   .nick {
@@ -44,12 +41,12 @@ article {
 div#demo {
   margin-top: 4em;
     .slider {
-      max-width: 75%;
-      max-height: 45%;
+      width: 420px;
+      height: 420px;
       border-radius: 10%;
     }
 }
-// index
+// slider
 
 .embed-responsive {
   margin: 3em auto;
@@ -63,6 +60,12 @@ div#demo {
   .embed-responsive {
     max-width: 80%;
   }
+  div#demo {
+    .slider {
+      width: 520px;
+      height: 520px;
+    }
+  }
 }
 
 
@@ -75,8 +78,8 @@ div#demo {
   }
   div#demo {
     .slider {
-      max-width: 60%;
-      max-height: 60%;
+      width: 600px;
+      height: 600px;
     }
   }
 }
@@ -90,8 +93,8 @@ div#demo {
   }
   div#demo {
     .slider {
-      max-width: 55%;
-      max-height: 60%;
+      width: 650px;
+      height: 650px;
     }
   }
 }

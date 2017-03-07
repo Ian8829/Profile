@@ -6,12 +6,8 @@
 body {
   background: black; }
 
-.img-fluid {
-  max-width: 70%;
-  border-radius: 30%;
-  margin: 0 auto;
-  margin-top: 4em;
-  text-align: center; }
+header a.navbar-brand {
+  margin-left: 13px; }
 
 article .nick {
   color: orange;
@@ -30,8 +26,8 @@ article .nick {
 div#demo {
   margin-top: 4em; }
   div#demo .slider {
-    max-width: 75%;
-    max-height: 45%;
+    width: 420px;
+    height: 420px;
     border-radius: 10%; }
 
 .embed-responsive {
@@ -41,7 +37,11 @@ div#demo {
 
 @media (min-width: 768px) {
   .embed-responsive {
-    max-width: 80%; } }
+    max-width: 80%; }
+
+  div#demo .slider {
+    width: 520px;
+    height: 520px; } }
 @media (min-width: 992px) {
   .img-fluid {
     max-width: 60%; }
@@ -50,8 +50,8 @@ div#demo {
     max-width: 70%; }
 
   div#demo .slider {
-    max-width: 60%;
-    max-height: 60%; } }
+    width: 600px;
+    height: 600px; } }
 @media (min-width: 1200px) {
   .img-fluid {
     max-width: 50%; }
@@ -60,7 +60,7 @@ div#demo {
     max-width: 60%; }
 
   div#demo .slider {
-    max-width: 55%;
-    max-height: 60%; } }
+    width: 650px;
+    height: 650px; } }
 
 /*# sourceMappingURL=style.css.map */
