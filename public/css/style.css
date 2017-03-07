@@ -6,9 +6,6 @@
 body {
   background: black; }
 
-header a.navbar-brand {
-  margin-left: 13px; }
-
 article .nick {
   color: orange;
   text-align: center; }
@@ -26,8 +23,8 @@ article .nick {
 div#demo {
   margin-top: 4em; }
   div#demo .slider {
-    width: 340px;
-    height: 355px;
+    width: 310px;
+    height: 322px;
     border-radius: 10%; }
 
 .embed-responsive {
@@ -35,13 +32,13 @@ div#demo {
   margin-bottom: 10em;
   max-width: 90%; }
 
-@media (min-width: 690px) {
+@media (min-width: 720px) {
   .embed-responsive {
     max-width: 80%; }
 
   div#demo .slider {
-    width: 450px;
-    height: 470px; } }
+    width: 430px;
+    height: 445px; } }
 @media (min-width: 992px) {
   .img-fluid {
     max-width: 60%; }
