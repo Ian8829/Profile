@@ -7,7 +7,7 @@
 body {
   background: black;
 }
-
+// basic
 
 .img-fluid {
   max-width: 70%;
@@ -16,6 +16,7 @@ body {
   margin-top: 4em;
   text-align: center;
 }
+// index
 
 article {
   .nick {
@@ -32,6 +33,9 @@ article {
     .soundcloud {
       border-radius: 10%;
     }
+    .youtube {
+      height: 55px;
+    }
   }
 }
 
@@ -42,3 +46,28 @@ article {
 }
 
 //music
+
+@media (min-width: 768px) {
+  .embed-responsive {
+    max-width: 80%;
+  }
+}
+
+
+@media (min-width: 992px) {
+  .img-fluid {
+    max-width: 60%;
+  }
+  .embed-responsive {
+    max-width: 70%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .img-fluid {
+    max-width: 50%;
+  }
+  .embed-responsive {
+    max-width: 60%;
+  }
+}

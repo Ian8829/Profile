@@ -24,10 +24,28 @@ article .nick {
     border-radius: 15%; }
   article .nick .soundcloud {
     border-radius: 10%; }
+  article .nick .youtube {
+    height: 55px; }
 
 .embed-responsive {
   margin: 3em auto;
   margin-bottom: 10em;
   max-width: 90%; }
+
+@media (min-width: 768px) {
+  .embed-responsive {
+    max-width: 80%; } }
+@media (min-width: 992px) {
+  .img-fluid {
+    max-width: 60%; }
+
+  .embed-responsive {
+    max-width: 70%; } }
+@media (min-width: 1200px) {
+  .img-fluid {
+    max-width: 50%; }
+
+  .embed-responsive {
+    max-width: 60%; } }
 
 /*# sourceMappingURL=style.css.map */
