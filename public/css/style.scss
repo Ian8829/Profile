@@ -9,12 +9,13 @@ body {
 }
 // basic
 
-//header {
-//  a.navbar-brand {
-//    margin-left: 13px;
-//  }
-//}
-// navHeader
+.jumbotron {
+  max-width: 75%;
+  margin: 4em auto;
+  background-color: darkorange;
+  color: rgba(89, 0, 0, 0.96);
+}
+// profile
 
 article {
   .nick {
@@ -36,7 +37,7 @@ article {
     }
   }
 }
-// profile
+// music
 
 div#demo {
   margin-top: 4em;
@@ -83,6 +84,9 @@ div#demo {
       }
     }
   }
+  .jumbotron {
+    max-width: 60%;
+  }
   .embed-responsive {
     max-width: 80%;
   }
@@ -103,6 +107,9 @@ div#demo {
         height: 42px;
       }
     }
+  }
+  .jumbotron {
+    max-width: 55%;
   }
   .img-fluid {
     max-width: 60%;
@@ -126,6 +133,9 @@ div#demo {
         height: 45px;
       }
     }
+  }
+  .jumbotron {
+    max-width: 50%;
   }
   .img-fluid {
     max-width: 50%;
