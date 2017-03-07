@@ -32,6 +32,9 @@ div#demo {
   margin-bottom: 10em;
   max-width: 90%; }
 
+@media (min-width: 350px) {
+  header a.navbar-brand {
+    margin-left: 13px; } }
 @media (min-width: 720px) {
   .embed-responsive {
     max-width: 80%; }
