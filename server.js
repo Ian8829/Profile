@@ -29,12 +29,12 @@ app.get('/music', (req, res) => res.render('music'));
 app.get('/login', (req, res) => res.render('login'));
 // sub pages
 
-app.use((req, res, next) => res.status(404).send('404 - Not Found'));
+app.use((req, res, next) => res.status(404).render('errorFour'));
 // 404 page
 
 app.use((err, req, res, next) => {
    console.error(err.stack);
-   res.status(500).send('500 - Server Error');
+   res.status(500).render('errorFive');
 });
 // 500 page
 
