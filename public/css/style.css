@@ -26,13 +26,13 @@ article .nick {
   color: orange;
   text-align: center;
   margin: 4em auto;
-  max-width: 39%;
+  max-width: 53%;
   background-color: #b63200;
   border-radius: 23%; }
   article .nick .icons {
     margin: 1em 1em;
-    width: 27px;
-    height: 27px; }
+    width: 24px;
+    height: 24px; }
   article .nick .naver {
     border-radius: 15%; }
   article .nick .soundcloud {
