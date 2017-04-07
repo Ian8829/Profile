@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -34,5 +35,8 @@
     "passport-twitter": "^1.0.4",
     "pug": "^2.0.0-beta11",
     "vue": "^2.2.1"
+  },
+  "engines": {
+    "node": "7.4.0"
   }
 }

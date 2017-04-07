@@ -1,5 +1,5 @@
 module.exports = {
-    db: 'mongodb://localhost/ianprofile',
+    db: 'mongodb://heroku_sn9881qp:anakh9g15vv3ppdacqses4pni1@ds155130.mlab.com:55130/heroku_sn9881qp',
     sessionSecret: 'developmentSessionSecret',
     facebook: {
         clientID: '271750093284631',
