@@ -34,9 +34,13 @@ module.exports = () => {
     }));
     // set express-session
 
+    // app.set('views', path.join(__dirname, '../views/pug'));
+    // app.set('view engine', 'pug');
+    // // main pug file
+
     app.set('views', path.join(__dirname, '../views'));
     app.set('view engine', 'ejs');
-    // main pug file
+    // main ejs file
 
     app.use(flash());
     // connect-flash
