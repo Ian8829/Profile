@@ -1,0 +1,38 @@
+<script id="img-slider-template" type="text/x-template">
+    <div id="slider"></div>
+    <input checked="" type="radio" name="slider" selected="false" id="slide1">
+    <input type="radio" name="slider"  selected="false" id="slide2">
+    <input type="radio" name="slider"  selected="false" id="slide3">
+    <input type="radio" name="slider"  selected="false" id="slide4">
+    <div id="slides">
+        <div id="overflow">
+            <div class="inner">
+                <article>
+                    <content select="img:nth-of-type(1)"></content>
+                </article>
+                <article>
+                    <content select="img:nth-of-type(2)"></content>
+                </article>
+                <article>
+                    <content select="img:nth-of-type(3)"></content>
+                </article>
+                <article>
+                    <content select="img:nth-of-type(4)"></content>
+                </article>
+            </div>
+        </div>
+    </div>
+    <label for="slide1"></label>
+    <label for="slide2"></label>
+    <label for="slide3"></label>
+    <label for="slide4"></label>
+</script>
+
+<div id="demo">
+    <img-slider>
+        <img src="/img/myCat.JPG" alt="myCat" class="slider">
+        <img src="/img/myDog.JPG" alt="myDog" class="slider">
+        <img src="/img/together1.JPG" alt="together1" class="slider">
+        <img src="/img/together2.JPG" alt="together2" class="slider">
+    </img-slider>
+</div>

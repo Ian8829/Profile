@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <%- include('layout') -%>
+    <title>Sign Out</title>
+</head>
+<body>
+    <%- include('navHeader') -%>
+    <% for(let i in messages) { %>
+        <div class="flash"><%= messages[i] %></div>
+    <% } %>
+    <form action="/signup" method="post">
+        <div>
+            <label>First Name:</label>
+            <input type="text" name="firstName" />
+        </div>
+        <div>
+            <label>Last Name:</label>
+            <input type="text" name="lastName" />
+        </div>
+        <div>
+            <label>UserName:</label>
+            <input type="text" name="username" />
+        </div>
+        <div>
+            <label>Email:</label>
+            <input type="text" name="email" />
+        </div>
+        <div>
+            <label>Password:</label>
+            <input type="password" name="password" />
+        </div>
+        <div>
+            <input type="submit" name="Sign up" />
+        </div>
+    </form>
+    <footer>
+        <%- include('footer') -%>
+    </footer>
+    <%- include('script') -%>
+</body>
+</html>

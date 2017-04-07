@@ -4,6 +4,8 @@ html(lang='ko')
         include layout
     body
         include navHeader
+        each val, i in messages
+            div.flash messages[i]
         form(action="/signin" method="post")
             div
                 label Username:

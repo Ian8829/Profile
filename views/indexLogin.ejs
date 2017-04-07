@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <%- include('layout') -%>
+    <title>Login</title>
+</head>
+<body>
+    <%- include('navHeader') -%>
+    <% if(userFullName) { %>
+        <h2>Hello <%=userFullName%></h2>
+        <a href="/signout">Signout</a>
+    <% } else { %>
+        <a href="/signup">Signup</a>
+        <a href="/signin">Signin</a>
+    <% } %>
+    <footer>
+        <%- include('footer') -%>
+    </footer>
+    <%- include('script') -%>
+</body>
+</html>

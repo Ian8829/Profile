@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <link rel="stylesheet" href="/css/slider.css">
+    <%- include('layout') -%>
+    <title>Music</title>
+</head>
+<body>
+    <%- include('navHeader') -%>
+    <article>
+        <div class="nick">
+            <a href="https://soundcloud.com/freakydo9"></a>
+            <img src="../img/soundcloud.png" alt="soundcloud" class="icons soundcloud">
+            <a href="https://www.youtube.com/playlist?list=PLmr3nioO9VNMA4aq5uEQqS97Ynyb7mju3"></a>
+            <img src="../img/youtube.png" alt="youtube" class="icons youtube">
+            <a href="https://soundcloud.com/freakydo9"></a>
+            <img src="../img/naverMusic.png" alt="naver" class="icons naver">
+        </div>
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/0mtAfjZ3P6A" frameborder="0" class="embed-responsive-item"></iframe>
+        </div>
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/CB7yDOMI7k0" frameborder="0" class="embed-responsive-item"></iframe>
+        </div>
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/SqQGZ65V_tc" frameborder="0" class="embed-responsive-item"></iframe>
+        </div>
+    </article>
+    <footer>
+        <%- include('footer') -%>
+    </footer>
+    <%- include('script') -%>
+</body>
+</html>
