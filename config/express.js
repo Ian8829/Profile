@@ -18,22 +18,26 @@ module.exports = () => {
 
     app.use(bodyParser.urlencoded({extended: true}));
     app.use(bodyParser.json());
+    // bodyParser
 
     app.use(methodOverride());
+    // methodOverride
 
     app.set('views', path.join(__dirname, '../views'));
     app.set('view engine', 'pug');
     // main pug file
 
     app.use(flash());
+    // connect-flash
 
     app.use(express.static(path.join(__dirname, '../public')));
     // load static files
 
-    app.get('/', (req, res) => res.render('index'));
+    // app.get('/', (req, res) => res.render('index'));
     // index
 
-    require('../app/routes/userServerRoutes')(app);
     require('../app/routes/indexServerRoutes')(app);
+    require('../app/routes/userServerRoutes')(app);
+
     return app;
 };
