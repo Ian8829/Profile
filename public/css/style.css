@@ -68,6 +68,27 @@ footer {
     font-size: 15px;
     text-align: center; }
 
+h5.askLogin {
+  color: lightyellow; }
+
+.signBtn {
+  margin: 2em 1em 1em 0; }
+
+.signUser {
+  color: antiquewhite; }
+
+.signOutBtn {
+  margin-top: 1em; }
+
+.signInBtn {
+  margin-top: 1em; }
+
+.signUpBtn {
+  margin-top: 1em; }
+
+.snsBtn {
+  margin-top: 2em; }
+
 @media (min-width: 568px) {
   article .nick {
     max-width: 33%; }

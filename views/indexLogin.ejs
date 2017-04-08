@@ -7,11 +7,16 @@
 <body>
     <%- include('navHeader') -%>
     <% if(userFullName) { %>
-        <h2>Hello <%=userFullName%></h2>
-        <a href="/signout">Signout</a>
+        <div class="jumbotron">
+            <h4 class="signUser">Bonjour <%=userFullName%> !</h4>
+            <a class="btn btn-warning signOutBtn" href="/signout">Sign out</a>
+        </div>
     <% } else { %>
-        <a href="/signup">Signup</a>
-        <a href="/signin">Signin</a>
+        <div class="jumbotron">
+            <h5 class="askLogin">Do you wanna see more info?</h5>
+            <a class="btn btn-danger signBtn" href="/signup">Signup</a>
+            <a class="btn btn-danger signBtn" href="/signin">Signin</a>
+        </div>
     <% } %>
     <footer>
         <%- include('footer') -%>

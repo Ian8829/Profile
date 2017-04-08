@@ -86,6 +86,36 @@ footer {
     text-align: center;
   }
 }
+
+// Login
+h5.askLogin {
+  color: lightyellow;
+}
+.signBtn {
+  margin: 2em 1em 1em 0;
+}
+
+.signUser {
+  color: antiquewhite;
+}
+.signOutBtn {
+  margin-top: 1em;
+}
+
+// sign in
+.signInBtn {
+  margin-top: 1em;
+}
+
+// sign up
+.signUpBtn {
+  margin-top: 1em;
+}
+
+.snsBtn {
+  margin-top: 2em;
+}
+
 // footer
 
 @media (min-width: 568px) {

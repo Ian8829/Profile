@@ -8,34 +8,35 @@
     <% for(let i in messages) { %>
         <div class="flash"><%= messages[i] %></div>
     <% } %>
-    <form action="/signup" method="post">
+    <div class="jumbotron">
         <div>
-            <label>First Name:</label>
-            <input type="text" name="firstName" />
+            <form class="signUpForm" action="/signup" method="post">
+                <div class="input-group">
+                    <input class="form-control" type="text" name="firstName" aria-describedby="basic-addon1" placeholder="First Name:" />
+                </div>
+                <div class="input-group">
+                    <input class="form-control" type="text" name="lastName" aria-describedby="basic-addon1" placeholder="last Name:" />
+                </div>
+                <div class="input-group">
+                    <input class="form-control" type="text" name="username" aria-describedby="basic-addon1" placeholder="Username:" />
+                </div>
+                <div class="input-group">
+                    <input class="form-control" type="text" name="email" aria-describedby="basic-addon1" placeholder="Email:" />
+                </div>
+                <div class="input-group">
+                    <input class="form-control" type="password" name="password" aria-describedby="basic-addon1" placeholder="Password:" />
+                </div>
+                <div class="signUpBtn">
+                    <input class="btn btn-warning" type="submit" name="Sign up" value="Sign Up" />
+                </div>
+            </form>
         </div>
-        <div>
-            <label>Last Name:</label>
-            <input type="text" name="lastName" />
+        <div class="snsBtn">
+            <a class='btn btn-info' href="/oauth/facebook">Facebook</a>
+            <a class='btn btn-info' href="/oauth/google">Google</a>
+            <a class='btn btn-info' href="/oauth/twitter">Twitter</a>
         </div>
-        <div>
-            <label>UserName:</label>
-            <input type="text" name="username" />
-        </div>
-        <div>
-            <label>Email:</label>
-            <input type="text" name="email" />
-        </div>
-        <div>
-            <label>Password:</label>
-            <input type="password" name="password" />
-        </div>
-        <div>
-            <input type="submit" name="Sign up" />
-        </div>
-    </form>
-    <a href="/oauth/facebook">Sign in with Facebook</a>
-    <a href="/oauth/google">Sign in with Google</a>
-    <a href="/oauth/twitter">Sign in with Twitter</a>
+    </div>
     <footer>
         <%- include('footer') -%>
     </footer>

@@ -8,22 +8,22 @@
     <% for(let i in messages) { %>
     <div class="flash"><%= messages[i] %></div>
     <% } %>
-    <form action="/signin" method="post">
-        <div>
-            <label>Username:</label>
-            <input type="text" name="username">
-        </div>
-        <div>
-            <label>Password:</label>
-            <input type="password" name="password">
-        </div>
-        <div>
-            <input type="submit" value="Sign In">
-        </div>
-    </form>
-    <a href="/oauth/facebook">Sign in with Facebook</a>
-    <a href="/oauth/google">Sign in with Google</a>
-    <a href="/oauth/twitter">Sign in with Twitter</a>
+    <div class="jumbotron">
+            <form action="/signin" method="post">
+                <div class="input-group">
+                    <input class="form-control" type="text" name="username" aria-describedby="basic-addon1" placeholder="Username:" />
+                </div>
+                <div class="input-group">
+                    <input class="form-control" type="password" name="password" aria-describedby="basic-addon1" placeholder="Password:" />
+                </div>
+                <div>
+                    <input class="btn btn-warning signInBtn" type="submit" value="Sign In">
+                </div>
+            </form>
+        <a class="btn btn-info snsBtn" href="/oauth/facebook">Facebook</a>
+        <a class="btn btn-info snsBtn" href="/oauth/google">Google</a>
+        <a class="btn btn-info snsBtn" href="/oauth/twitter">Twitter</a>
+    </div>
     <footer>
         <%- include('footer') -%>
     </footer>
