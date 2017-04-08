@@ -19,6 +19,8 @@ body {
   min-height: calc(100vh - 70px);
   width: 100%;
 }
+
+$mainColor: antiquewhite;
 // basic
 
 .jumbotron {
@@ -26,14 +28,18 @@ body {
   margin: 4em auto;
   background-color: darkorange;
   color: rgba(89, 0, 0, 0.96);
-  text-align: center
+  text-align: center;
+  .intro {
+    color: $mainColor;
+  }
 }
 // profile
 
 .errorFour {
   background-color: darkred;
-  color: floralwhite;
+  color: $mainColor;
 }
+// err
 
 article {
   .nick {
@@ -86,33 +92,36 @@ footer {
     text-align: center;
   }
 }
+// footer
 
-// Login
 h5.askLogin {
-  color: lightyellow;
+  color: $mainColor;
 }
 .signBtn {
   margin: 2em 1em 1em 0;
 }
 
 .signUser {
-  color: antiquewhite;
+  color: $mainColor;
 }
 .signOutBtn {
   margin-top: 1em;
 }
+// Login
 
-// sign in
+
 .signInBtn {
   margin-top: 1em;
 }
+// sign in
 
-// sign up
+
 .signUpBtn {
   margin-top: 1em;
 }
+// sign up
 
-// sns btn
+
 
 .sns {
   margin-top: 2em;
@@ -120,8 +129,8 @@ h5.askLogin {
     margin-top: 1em;
   }
 }
+// sns btn
 
-// footer
 
 @media (min-width: 568px) {
   article {

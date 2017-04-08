@@ -22,10 +22,12 @@ body {
   background-color: darkorange;
   color: rgba(89, 0, 0, 0.96);
   text-align: center; }
+  .jumbotron .intro {
+    color: antiquewhite; }
 
 .errorFour {
   background-color: darkred;
-  color: floralwhite; }
+  color: antiquewhite; }
 
 article .nick {
   color: orange;
@@ -69,7 +71,7 @@ footer {
     text-align: center; }
 
 h5.askLogin {
-  color: lightyellow; }
+  color: antiquewhite; }
 
 .signBtn {
   margin: 2em 1em 1em 0; }
