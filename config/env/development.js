@@ -2,8 +2,8 @@ module.exports = {
     db: 'mongodb://heroku_sn9881qp:anakh9g15vv3ppdacqses4pni1@ds155130.mlab.com:55130/heroku_sn9881qp',
     sessionSecret: 'developmentSessionSecret',
     facebook: {
-        clientID: '271750093284631',
-        clientSecret: 'febc76d2d9e9ce1babb2d189f051bef1',
+        clientID: '1363024937074681',
+        clientSecret: 'e021da419b5018ab843a1a686a4b29a1',
         callbackURL: 'https://ianprofile.herokuapp.com/oauth/facebook/callback'
     },
     google: {
