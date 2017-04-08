@@ -4,7 +4,7 @@ const FacebookStrategy = require('passport-facebook').Strategy;
 const config = require('../config');
 const users = require('../../app/controllers/userServerControllers');
 
-module.exports = () => {
+module.exports = function () {
   passport.authenticate('facebook');
   passport.authenticate('facebook', {scope: 'email'});
   passport.use(new FacebookStrategy({
