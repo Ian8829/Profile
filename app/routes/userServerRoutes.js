@@ -39,6 +39,10 @@ module.exports = app => {
             'https://www.googleapis.com/auth/userinfo.email'
         ],
     }));
+    app.get('/oauth/google/callback', passport.authenticate('google', {
+        failureRedirect: '/signin',
+        successRedirect: '/'
+    }));
     // authenticate google
 
     app.use((req, res, next) => {
