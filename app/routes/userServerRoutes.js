@@ -2,10 +2,11 @@ const users = require('../../app/controllers/userServerControllers');
 const passport = require('passport');
 
 module.exports = app => {
-    app.get('/profile', (req, res) => res.render('profile'));
-    app.get('/sites', (req, res) => res.render('sites'));
-    app.get('/music', (req, res) => res.render('music'));
+    app.get('/profile', (req, res) => res.render('profile', {title: 'Ian Profile'}));
+    app.get('/sites', (req, res) => res.render('sites', {title: 'Ian Profile'}));
+    app.get('/music', (req, res) => res.render('music', {title: 'Ian Profile'}));
     app.get('/login', (req, res) => res.render('indexLogin', {
+        title: 'Ian Profile',
         userFullName: req.user ? req.user.fullName: ''
     }));
     // sub pages

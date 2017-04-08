@@ -26,6 +26,7 @@ const getErrorMessage = err => {
 exports.renderSignin = (req, res, next) => {
     if(!req.user) {
         res.render('signin', {
+            title: 'Ian Profile',
             messages: req.flash('error') || req.flash('info')
         });
     } else {
@@ -36,6 +37,7 @@ exports.renderSignin = (req, res, next) => {
 exports.renderSignup = (req, res, next) => {
     if(!req.user) {
         res.render('signup', {
+            title: 'Ian Profile',
             messages: req.flash('error')
         })
     } else {
