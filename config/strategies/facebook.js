@@ -5,13 +5,13 @@ const config = require('../config');
 const users = require('../../app/controllers/userServerControllers');
 
 module.exports = function () {
-  // passport.authenticate('facebook');
-  // passport.authenticate('facebook', {scope: 'email'});
+  passport.authenticate('facebook');
+  passport.authenticate('facebook', {scope: 'email'});
   passport.use(new FacebookStrategy({
       clientID: config.facebook.clientID,
       clientSecret: config.facebook.clientSecret,
       callbackURL: config.facebook.callbackURL,
-      profileFields: ['id', 'name', 'displayName', 'emails'],
+      profileFields: ['id', 'name', 'displayName'],
       passReqToCallback: true
   }, (req, accessToken, refreshToken, profile, done) => {
       const providerData = profile._json;
@@ -22,7 +22,7 @@ module.exports = function () {
           firstName: profile.name.givenName,
           lastName: profile.name.familyName,
           fullName: profile.displayName,
-          email: profile.emails[0].value,
+          // email: profile.emails[0].value,
           userName: profile.name.givenName + profile.name.familyName,
           provider: 'facebook',
           providerId: profile.id,
