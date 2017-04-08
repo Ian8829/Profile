@@ -1,10 +1,12 @@
 const users = require('../../app/controllers/userServerControllers');
 const passport = require('passport');
+const title = {title: 'Ian Prifole'};
+// const userFullName ={userFullName: req.user ? req.user.fullName: ''};
 
 module.exports = app => {
-    app.get('/profile', (req, res) => res.render('profile', {title: 'Ian Profile'}));
-    app.get('/sites', (req, res) => res.render('sites', {title: 'Ian Profile'}));
-    app.get('/music', (req, res) => res.render('music', {title: 'Ian Profile'}));
+    app.get('/profile', (req, res) => res.render('profile', title));
+    app.get('/sites', (req, res) => res.render('sites', title));
+    app.get('/music', (req, res) => res.render('music', title));
     app.get('/login', (req, res) => res.render('indexLogin', {
         title: 'Ian Profile',
         userFullName: req.user ? req.user.fullName: ''
@@ -21,14 +23,14 @@ module.exports = app => {
     app.get('/signout', users.signout);
 
     app.use((req, res, next) => {
-        res.status(404).render('errorFour');
+        res.status(404).render('errorFour', title);
         next();
     });
     // 404 page
 
     app.use((err, req, res, next) => {
         console.error(err.stack);
-        res.status(500).render('errorFive');
+        res.status(500).render('errorFive', title);
     });
     // 500 page
 };
