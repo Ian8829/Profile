@@ -32,6 +32,15 @@ module.exports = app => {
     }));
     // authenticate facebook
 
+    app.get('/oauth/google', passport.authenticate('google', {
+        failureRedirect: '/signin',
+        scope: [
+            'https://www.googleapis.com/auth/userinfo.profile',
+            'https://www.googleapis.com/auth/userinfo.email'
+        ],
+    }));
+    // authenticate google
+
     app.use((req, res, next) => {
         res.status(404).render('errorFour', title);
         next();

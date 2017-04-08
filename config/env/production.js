@@ -7,8 +7,8 @@ module.exports = {
         callbackURL: 'https://ianprofile.herokuapp.com/oauth/facebook/callback'
     },
     google: {
-        clientID: '377709193680-tolom7bda734akkhancqj495ugqh0d9s.apps.googleusercontent.com',
-        clientSecret: 'qSWSQGmkadQBE5gTJfhjED5o',
+        clientID: '214629447921-3l7il1kbbsbcu76h4pnkn5dtqoga2g24.apps.googleusercontent.com',
+        clientSecret: '_7s_ri1i4l_8xdRjU1iDb_cs',
         callbackURL: 'https://ianprofile.herokuapp.com/oauth/google/callback'
     },
     twitter: {
