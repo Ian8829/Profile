@@ -9,7 +9,7 @@ module.exports = {
     google: {
         clientID: '377709193680-tolom7bda734akkhancqj495ugqh0d9s.apps.googleusercontent.com',
         clientSecret: 'qSWSQGmkadQBE5gTJfhjED5o',
-        callbackURL: 'https://ianprofile.herokuapp.comoauth/google/callback'
+        callbackURL: 'https://ianprofile.herokuapp.com/oauth/google/callback'
     },
     twitter: {
         clientID: '6D5CBaHTrxNup6IicRpWJJAJB',

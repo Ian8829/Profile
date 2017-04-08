@@ -1,6 +1,6 @@
 const users = require('../../app/controllers/userServerControllers');
 const passport = require('passport');
-const title = {title: 'Ian Prifole'};
+const title = {title: 'Ian Profile'};
 // const userFullName ={userFullName: req.user ? req.user.fullName: ''};
 
 module.exports = app => {
@@ -44,3 +44,5 @@ module.exports = app => {
     });
     // 500 page
 };
+
+

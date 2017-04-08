@@ -12,7 +12,7 @@ module.exports = function () {
       clientSecret: config.facebook.clientSecret,
       callbackURL: config.facebook.callbackURL,
       profileFields: ['id', 'name', 'displayName', 'emails'],
-      passReqCallback: true
+      passReqToCallback: true
   }, (req, accessToken, refreshToken, profile, done) => {
       const providerData = profile._json;
       providerData.accessToken = accessToken;
@@ -31,3 +31,5 @@ module.exports = function () {
       users.saveOAuthUserProfile(req, providerUserProfile, done);
   }));
 };
+
+
