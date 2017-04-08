@@ -74,7 +74,7 @@ h5.askLogin {
   color: antiquewhite; }
 
 .signBtn {
-  margin: 2em 1em 1em 0; }
+  margin: 20px 10px 10px 10px; }
 
 .signUser {
   color: antiquewhite; }
@@ -164,6 +164,9 @@ h5.askLogin {
     height: 640px; }
 
   .inputForm {
-    padding: 5em 8em; } }
+    padding: 5em 8em; }
+
+  .signBtn {
+    margin: 30px 20px 20px 20px; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,7 +1,6 @@
 const users = require('../../app/controllers/userServerControllers');
 const passport = require('passport');
 const title = {title: 'Ian Profile'};
-// const userFullName ={userFullName: req.user ? req.user.fullName: ''};
 
 module.exports = app => {
     app.get('/profile', (req, res) => res.render('profile', title));

@@ -98,7 +98,7 @@ h5.askLogin {
   color: $mainColor;
 }
 .signBtn {
-  margin: 2em 1em 1em 0;
+  margin: 20px 10px 10px 10px;
 }
 
 .signUser {
@@ -237,5 +237,9 @@ h5.askLogin {
 
   .inputForm {
     padding: 5em 8em;
+  }
+
+  .signBtn {
+    margin: 30px 20px 20px 20px;
   }
 }
