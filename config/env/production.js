@@ -12,8 +12,8 @@ module.exports = {
         callbackURL: 'https://ianprofile.herokuapp.com/oauth/google/callback'
     },
     twitter: {
-        clientID: '6D5CBaHTrxNup6IicRpWJJAJB',
-        clientSecret: 'Z0pS1DHXVFT8NMPVp6faCoqGiIV8Je4tVFUmFBqRVyo0zrEjc8',
+        clientID: '924OgHVUfQgd3Uh7UHC4qSpmt',
+        clientSecret: 'HJCZwXr1SHNYDoEaEcI374ezmS31KQBncZeEbJFm0U9MyegW2m',
         callbackURL: 'https://ianprofile.herokuapp.com/oauth/twitter/callback'
     }
 };
