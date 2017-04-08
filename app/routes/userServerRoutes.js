@@ -23,9 +23,7 @@ module.exports = app => {
     app.get('/signout', users.signout);
     // authenticate basic
 
-    app.get('/oauth/facebook', passport.authenticate('facebook', {
-        failureRedirect: '/signin'
-    }));
+    app.get('/oauth/facebook', passport.authenticate('facebook', {failureRedirect: '/signin'}));
     app.get('/oauth/facebook/callback', passport.authenticate('facebook', {
         failureRedirect: '/signin',
         successRedirect: '/'
