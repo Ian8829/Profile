@@ -8,7 +8,7 @@
     <% for(let i in messages) { %>
         <div class="flash"><%= messages[i] %></div>
     <% } %>
-    <div class="jumbotron">
+    <div class="jumbotron inputForm">
         <div>
             <form class="signUpForm" action="/signup" method="post">
                 <div class="input-group">
@@ -31,10 +31,10 @@
                 </div>
             </form>
         </div>
-        <div class="snsBtn">
-            <a class='btn btn-info' href="/oauth/facebook">Facebook</a>
-            <a class='btn btn-info' href="/oauth/google">Google</a>
-            <a class='btn btn-info' href="/oauth/twitter">Twitter</a>
+        <div class="sns">
+            <a class='btn btn-info snsBtn' href="/oauth/facebook">Facebook</a>
+            <a class='btn btn-info snsBtn' href="/oauth/google">Google</a>
+            <a class='btn btn-info snsBtn' href="/oauth/twitter">Twitter</a>
         </div>
     </div>
     <footer>

@@ -35,7 +35,7 @@ article .nick {
   background-color: #b63200;
   border-radius: 23%; }
   article .nick .icons {
-    margin: 1em 1em;
+    margin: 10px 13px;
     width: 25px;
     height: 25px; }
   article .nick .naver {
@@ -86,8 +86,10 @@ h5.askLogin {
 .signUpBtn {
   margin-top: 1em; }
 
-.snsBtn {
+.sns {
   margin-top: 2em; }
+  .sns .snsBtn {
+    margin-top: 1em; }
 
 @media (min-width: 568px) {
   article .nick {
@@ -116,7 +118,10 @@ h5.askLogin {
 
   div#demo .slider {
     width: 430px;
-    height: 445px; } }
+    height: 445px; }
+
+  .inputForm {
+    padding: 2em 3em; } }
 @media (min-width: 992px) {
   article .nick {
     max-width: 23%; }
@@ -135,7 +140,10 @@ h5.askLogin {
 
   div#demo .slider {
     width: 530px;
-    height: 550px; } }
+    height: 550px; }
+
+  .inputForm {
+    padding: 3em 5em; } }
 @media (min-width: 1200px) {
   article .nick {
     max-width: 20%; }
@@ -151,6 +159,9 @@ h5.askLogin {
 
   div#demo .slider {
     width: 620px;
-    height: 640px; } }
+    height: 640px; }
+
+  .inputForm {
+    padding: 5em 8em; } }
 
 /*# sourceMappingURL=style.css.map */
