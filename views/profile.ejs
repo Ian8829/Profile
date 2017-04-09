@@ -8,17 +8,23 @@
     <article>
         <div class="jumbotron">
             <div class="intro">
-                <h5>Bonjour</h5>
-                <br>
-                <p>I'm Javascript Full Stack Developer and Electronic Music Producer.</p>
-                <p>Do you wanna listen my music?</p>
-                <p>
-                    <a href="/music" class="btn btn-danger" role="button">Click</a>
-                </p>
-                <p>Do you wanna listen my sites?</p>
-                <p>
-                    <a href="/sites" class="btn btn-info" role="button">Click</a>
-                </p>
+                <% if(!currentUser) { %>
+                    <h5>Bonjour</h5>
+                    <br>
+                    <p>I'm Javascript Full Stack Developer and Electronic Music Producer.</p>
+                    <p>If you want to know more info about me, </p>
+                    <p>You have to login</p>
+                    <a href="/login" class="btn btn-danger" role="button">Click</a>
+                <% } else { %>
+                    <p>Do you wanna listen my music?</p>
+                    <p>
+                        <a href="/music" class="btn btn-danger" role="button">Click</a>
+                    </p>
+                    <p>Do you wanna listen my sites?</p>
+                    <p>
+                        <a href="/sites" class="btn btn-info" role="button">Click</a>
+                    </p>
+                <% } %>
             </div>
         </div>
     </article>
