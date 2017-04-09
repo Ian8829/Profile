@@ -7,7 +7,7 @@ module.exports = () => {
         User.findOne({username}, (err, user) => {
             if(err) { return done(err); }
             if(!user) {
-                return done(null, false, {message: 'Unknown User!'});
+                return done(null, false, {message: 'User not exists!'});
             }
             if(!user.authenticate(password)) {
                 return done(null, false, {message: 'Invalid Password!'});

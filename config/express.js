@@ -34,6 +34,18 @@ module.exports = () => {
     }));
     // set express-session
 
+    app.use(flash());
+    // connect-flash
+
+    app.use(passport.initialize());
+    app.use(passport.session());
+
+    app.use((req, res, next) => {
+        res.locals.currentUser = req.isAuthenticated();
+        next();
+    });
+    // check authenticate
+
     // app.set('views', path.join(__dirname, '../views/pug'));
     // app.set('view engine', 'pug');
     // // main pug file
@@ -41,12 +53,6 @@ module.exports = () => {
     app.set('views', path.join(__dirname, '../views'));
     app.set('view engine', 'ejs');
     // main ejs file
-
-    app.use(flash());
-    // connect-flash
-
-    app.use(passport.initialize());
-    app.use(passport.session());
 
     app.use(express.static(path.join(__dirname, '../public')));
     // load static files
